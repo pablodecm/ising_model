@@ -1,0 +1,13 @@
+((*- extends 'article.tplx' -*))
+
+((* block author *))
+\author{Pablo de Castro}
+((* endblock author *))
+
+((* block title *))
+\title{Ejercicio: Simulación del modelo de Ising en 2D}
+((* endblock title *))
+
+% Disable input cells
+((* block input_group *))
+((* endblock input_group *))
