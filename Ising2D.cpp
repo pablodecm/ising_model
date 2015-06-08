@@ -55,13 +55,13 @@ void Ising2D::doTimeStep()
 
 double Ising2D::meanMagnetization()
 {
-  double sum = 0;
+  int sum = 0;
   for (int i=0; i< lattice_.size(); i++) {
     for (int j=0; j < lattice_[0].size(); j++) {
       sum += lattice_[i][j];
     }
   }
-  return sum/(lattice_.size()^2);
+  return double(sum)/(lattice_.size()*lattice_[0].size());
 }
 
 std::vector<double> Ising2D::simulate( int n_steps ) 
