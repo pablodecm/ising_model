@@ -1,3 +1,7 @@
 *.so
 build/
+.ipynb_checkpoints/
+Ising.cpp
+IsingModel.pdf
+IsingModel_files/
 
